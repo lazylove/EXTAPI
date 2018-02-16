@@ -1,0 +1,385 @@
+<dummy-request>
+	<dummy-message id="1">
+		<EquinoxMessage from="entronica2018.E11.0" via="entronica2018.E11.0"
+			session="669772775844604:00001" timeout="10" ret="0" diag="">
+			<EquinoxRawData name="HTTP" invoke="555" type="request" method="POST" url="/v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20" ctype="text/xml" to="entronica2018.ES00" orig="entronica2018.ES05.0.0" ret="0"> 
+				
+				<ERDHeader>
+				<Header name="Host" value="127.0.0.1:23600" />
+				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />
+                <Header name="x-command-id" value="myAis-1505981226052-0001" />
+				<Header name="Content-Language" value="en" />
+				<Header name="Accept-Language" value="en" />
+				<Header name="Content-Length" value="869" />
+				<Header name="REMOTE_ADDR" value="127.0.0.1" />
+				</ERDHeader>
+				
+				<ERDData value="{
+					&quot;contentItems&quot;: [{
+						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,
+						&quot;contenttype&quot;: &quot;text/plain&quot;,
+						&quot;language&quot;: &quot;en&quot;
+					}]
+				}" />
+
+				
+			</EquinoxRawData>
+			<EquinoxInstance>
+				<value val="" />
+			</EquinoxInstance>
+		</EquinoxMessage>
+	</dummy-message>
+	
+	<dummy-message id="2">
+		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >
+			<EquinoxRawData ret="0" method="GET" ctype="text/xml" name="HTTP" ecode="200" invoke="1" to="Entronica2018.ES00.0" orig="Entrinica2018.ES05.0" type="response"  >
+				<ERDHeader>
+				 <Header name="Content-Type" value="application/json" />
+				</ERDHeader>
+				<ERDData value="{
+					&quot;resultCode&quot;: &quot;20000&quot;,
+					&quot;developerMessage&quot;: &quot;Success&quot;,
+					&quot;username&quot;: &quot;bc93eb8a-341b-40a7-9800-127ee35cc664&quot;,
+					&quot;password&quot;: &quot;FAM6GfxGA3GF&quot;,
+					&quot;url&quot;: &quot;https://gateway.watsonplatform.net/personality-insights/api&quot;
+				}"/>
+				
+			</EquinoxRawData>
+			<EquinoxInstance>
+				<value val="1::W_SERVICE_CREDENTIAL::false::eyJpbml0SW52b2tlIjoiMSIsIm91dE1lc3NhZ2UiOnsiZ2V0U2VydmljZUNyZWRlbnRpYWw6MToxNTE4MDg2MTI2OTA5Ijp7ImVxeE1zZ01vZGVsIjp7ImhlYWRlciI6W3sibmFtZSI6IngtY29tbWFuZC1pZCIsInZhbHVlIjoibXlBaXMtMTUwNTk4MTIyNjA1Mi0wMDAxIn1dLCJjb250ZW50TWVzc2FnZSI6IiJ9LCJzZXJ2aWNlIjoiU2VydmljZS4wIn19fQ==::" />
+			</EquinoxInstance>
+</EquinoxMessage>
+	</dummy-message>
+	
+	<dummy-message id="3">
+		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >
+			<EquinoxRawData to="Entronica2018.E01.0" name="db" ctype="db" type="request" invoke="2" ret="0" >
+				<message command="search" id="2" resultcode="0" objecttype="DNSPartner" key0="0" key1="IBM" key2="PersonalityInsights" key3="profile" key4="" >
+					<data value="{
+					&quot;service&quot;: &quot;ExternalAPI.ES04.Watson&quot;,
+					&quot;url&quot;: &quot;/v3/profile&quot;,
+					&quot;authenType&quot;: &quot;userPwd&quot;,
+					&quot;requestHeader&quot;: [Content-Type&quot;, &quot;Accept&quot;, &quot;Content-Language&quot;, &quot;Accept-Language&quot;, &quot;X-Watson-Learning-Opt-Out&quot;]
+				}
+					"/>
+				</message>
+			</EquinoxRawData>
+			<EquinoxInstance>
+				<value val="1::W_SEARCH_DNS_PARTNER::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJpZCI6IjIiLCJrZXlPYmplY3QiOnsiY29udGVudHMiOnsiMCI6IjAiLCIxIjoiSUJNIiwiMiI6IlBlcnNvbmFsaXR5SW5zaWdodHMiLCIzIjoicHJvZmlsZSIsIjQiOiIiLCJvYmplY3R0eXBlIjoiRE5TUGFydG5lciJ9fX19fQ==::" />
+			</EquinoxInstance>
+		</EquinoxMessage>
+	</dummy-message>
+	
+	<dummy-message id="4">
+		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >
+			<EquinoxRawData ret="0" method="POST" ctype="text/xml" name="HTTP" ecode="200" invoke="3" to="Entronica2018.ES00.0" orig="Entrinica2018.ES05.0" type="response"  >
+				<ERDHeader>
+						<Header name="Pragma" value="hop=1534193621:VS_ExtAPI.ES05.SACF.0; end=" />
+						<Header name="Set-Cookie" value="host=; port=23500; via=auto; session=1534193621" />
+						<Header name="Accept" value="application/json" />
+						<Header name="Content-Language" value="en" />
+						<Header name="Accept-Language" value="en" />
+						<Header name="Content-Type" value="application/json" />
+						<Header name="Content-Length" value="712" />
+					</ERDHeader>
+					<ERDData value="{
+						&quot;word_count&quot;: 103,
+						&quot;word_count_message&quot;: &quot;There were 103 words in the input. We need a minimum of 600, preferably 1,200 or more, to compute statistically significant estimates&quot;,
+						&quot;processed_language&quot;: &quot;en&quot;,
+						&quot;personality&quot;: [{
+							&quot;trait_id&quot;: &quot;big5_openness&quot;,
+							&quot;name&quot;: &quot;Openness&quot;,
+							&quot;category&quot;: &quot;personality&quot;,
+							&quot;percentile&quot;: 0.9419901585070444,
+							&quot;children&quot;: [{
+								&quot;trait_id&quot;: &quot;facet_adventurousness&quot;,
+								&quot;name&quot;: &quot;Adventurousness&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.7039184189857008
+							}, {
+								&quot;trait_id&quot;: &quot;facet_artistic_interests&quot;,
+								&quot;name&quot;: &quot;Artistic interests&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.25012526123098966
+							}, {
+								&quot;trait_id&quot;: &quot;facet_emotionality&quot;,
+								&quot;name&quot;: &quot;Emotionality&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.06114166098801965
+							}, {
+								&quot;trait_id&quot;: &quot;facet_imagination&quot;,
+								&quot;name&quot;: &quot;Imagination&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.5842673131490224
+							}, {
+								&quot;trait_id&quot;: &quot;facet_intellect&quot;,
+								&quot;name&quot;: &quot;Intellect&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.9352859036042205
+							}, {
+								&quot;trait_id&quot;: &quot;facet_liberalism&quot;,
+								&quot;name&quot;: &quot;Authority-challenging&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.9911495661857173
+							}]
+						}, {
+							&quot;trait_id&quot;: &quot;big5_conscientiousness&quot;,
+							&quot;name&quot;: &quot;Conscientiousness&quot;,
+							&quot;category&quot;: &quot;personality&quot;,
+							&quot;percentile&quot;: 0.37171487595491015,
+							&quot;children&quot;: [{
+								&quot;trait_id&quot;: &quot;facet_achievement_striving&quot;,
+								&quot;name&quot;: &quot;Achievement striving&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.7118571645159613
+							}, {
+								&quot;trait_id&quot;: &quot;facet_cautiousness&quot;,
+								&quot;name&quot;: &quot;Cautiousness&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.800612567487107
+							}, {
+								&quot;trait_id&quot;: &quot;facet_dutifulness&quot;,
+								&quot;name&quot;: &quot;Dutifulness&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.39992000108860976
+							}, {
+								&quot;trait_id&quot;: &quot;facet_orderliness&quot;,
+								&quot;name&quot;: &quot;Orderliness&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.16614259488044453
+							}, {
+								&quot;trait_id&quot;: &quot;facet_self_discipline&quot;,
+								&quot;name&quot;: &quot;Self-discipline&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.6799427224453404
+							}, {
+								&quot;trait_id&quot;: &quot;facet_self_efficacy&quot;,
+								&quot;name&quot;: &quot;Self-efficacy&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.7488003647788268
+							}]
+						}, {
+							&quot;trait_id&quot;: &quot;big5_extraversion&quot;,
+							&quot;name&quot;: &quot;Extraversion&quot;,
+							&quot;category&quot;: &quot;personality&quot;,
+							&quot;percentile&quot;: 0.769825199283471,
+							&quot;children&quot;: [{
+								&quot;trait_id&quot;: &quot;facet_activity_level&quot;,
+								&quot;name&quot;: &quot;Activity level&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.8186842409101049
+							}, {
+								&quot;trait_id&quot;: &quot;facet_assertiveness&quot;,
+								&quot;name&quot;: &quot;Assertiveness&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.9368803673458745
+							}, {
+								&quot;trait_id&quot;: &quot;facet_cheerfulness&quot;,
+								&quot;name&quot;: &quot;Cheerfulness&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.08568528494419031
+							}, {
+								&quot;trait_id&quot;: &quot;facet_excitement_seeking&quot;,
+								&quot;name&quot;: &quot;Excitement-seeking&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.41737409880713605
+							}, {
+								&quot;trait_id&quot;: &quot;facet_friendliness&quot;,
+								&quot;name&quot;: &quot;Outgoing&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.11903701590788546
+							}, {
+								&quot;trait_id&quot;: &quot;facet_gregariousness&quot;,
+								&quot;name&quot;: &quot;Gregariousness&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.28885133262983254
+							}]
+						}, {
+							&quot;trait_id&quot;: &quot;big5_agreeableness&quot;,
+							&quot;name&quot;: &quot;Agreeableness&quot;,
+							&quot;category&quot;: &quot;personality&quot;,
+							&quot;percentile&quot;: 0.059676107963974434,
+							&quot;children&quot;: [{
+								&quot;trait_id&quot;: &quot;facet_altruism&quot;,
+								&quot;name&quot;: &quot;Altruism&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.15719464949941875
+							}, {
+								&quot;trait_id&quot;: &quot;facet_cooperation&quot;,
+								&quot;name&quot;: &quot;Cooperation&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.5311829109768751
+							}, {
+								&quot;trait_id&quot;: &quot;facet_modesty&quot;,
+								&quot;name&quot;: &quot;Modesty&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.07090707046748224
+							}, {
+								&quot;trait_id&quot;: &quot;facet_morality&quot;,
+								&quot;name&quot;: &quot;Uncompromising&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.12384491263638048
+							}, {
+								&quot;trait_id&quot;: &quot;facet_sympathy&quot;,
+								&quot;name&quot;: &quot;Sympathy&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.27095816026778674
+							}, {
+								&quot;trait_id&quot;: &quot;facet_trust&quot;,
+								&quot;name&quot;: &quot;Trust&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.9247631005981167
+							}]
+						}, {
+							&quot;trait_id&quot;: &quot;big5_neuroticism&quot;,
+							&quot;name&quot;: &quot;Emotional range&quot;,
+							&quot;category&quot;: &quot;personality&quot;,
+							&quot;percentile&quot;: 0.6755651399913001,
+							&quot;children&quot;: [{
+								&quot;trait_id&quot;: &quot;facet_anger&quot;,
+								&quot;name&quot;: &quot;Fiery&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.3391256730478402
+							}, {
+								&quot;trait_id&quot;: &quot;facet_anxiety&quot;,
+								&quot;name&quot;: &quot;Prone to worry&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.5666725848376579
+							}, {
+								&quot;trait_id&quot;: &quot;facet_depression&quot;,
+								&quot;name&quot;: &quot;Melancholy&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.7616169291993752
+							}, {
+								&quot;trait_id&quot;: &quot;facet_immoderation&quot;,
+								&quot;name&quot;: &quot;Immoderation&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.006761221762454028
+							}, {
+								&quot;trait_id&quot;: &quot;facet_self_consciousness&quot;,
+								&quot;name&quot;: &quot;Self-consciousness&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.6409526346582101
+							}, {
+								&quot;trait_id&quot;: &quot;facet_vulnerability&quot;,
+								&quot;name&quot;: &quot;Susceptible to stress&quot;,
+								&quot;category&quot;: &quot;personality&quot;,
+								&quot;percentile&quot;: 0.369675866131936
+							}]
+						}],
+						&quot;needs&quot;: [{
+							&quot;trait_id&quot;: &quot;need_challenge&quot;,
+							&quot;name&quot;: &quot;Challenge&quot;,
+							&quot;category&quot;: &quot;needs&quot;,
+							&quot;percentile&quot;: 0.35446753801682473
+						}, {
+							&quot;trait_id&quot;: &quot;need_closeness&quot;,
+							&quot;name&quot;: &quot;Closeness&quot;,
+							&quot;category&quot;: &quot;needs&quot;,
+							&quot;percentile&quot;: 0.2619340172144685
+						}, {
+							&quot;trait_id&quot;: &quot;need_curiosity&quot;,
+							&quot;name&quot;: &quot;Curiosity&quot;,
+							&quot;category&quot;: &quot;needs&quot;,
+							&quot;percentile&quot;: 0.7008245099261644
+						}, {
+							&quot;trait_id&quot;: &quot;need_excitement&quot;,
+							&quot;name&quot;: &quot;Excitement&quot;,
+							&quot;category&quot;: &quot;needs&quot;,
+							&quot;percentile&quot;: 0.279999893071971
+						}, {
+							&quot;trait_id&quot;: &quot;need_harmony&quot;,
+							&quot;name&quot;: &quot;Harmony&quot;,
+							&quot;category&quot;: &quot;needs&quot;,
+							&quot;percentile&quot;: 0.078902747687144
+						}, {
+							&quot;trait_id&quot;: &quot;need_ideal&quot;,
+							&quot;name&quot;: &quot;Ideal&quot;,
+							&quot;category&quot;: &quot;needs&quot;,
+							&quot;percentile&quot;: 0.17118039933618528
+						}, {
+							&quot;trait_id&quot;: &quot;need_liberty&quot;,
+							&quot;name&quot;: &quot;Liberty&quot;,
+							&quot;category&quot;: &quot;needs&quot;,
+							&quot;percentile&quot;: 0.3221545703405543
+						}, {
+							&quot;trait_id&quot;: &quot;need_love&quot;,
+							&quot;name&quot;: &quot;Love&quot;,
+							&quot;category&quot;: &quot;needs&quot;,
+							&quot;percentile&quot;: 0.5842129974071815
+						}, {
+							&quot;trait_id&quot;: &quot;need_practicality&quot;,
+							&quot;name&quot;: &quot;Practicality&quot;,
+							&quot;category&quot;: &quot;needs&quot;,
+							&quot;percentile&quot;: 0.7917636644483492
+						}, {
+							&quot;trait_id&quot;: &quot;need_self_expression&quot;,
+							&quot;name&quot;: &quot;Self-expression&quot;,
+							&quot;category&quot;: &quot;needs&quot;,
+							&quot;percentile&quot;: 0.4390342914781338
+						}, {
+							&quot;trait_id&quot;: &quot;need_stability&quot;,
+							&quot;name&quot;: &quot;Stability&quot;,
+							&quot;category&quot;: &quot;needs&quot;,
+							&quot;percentile&quot;: 0.5012875168727058
+						}, {
+							&quot;trait_id&quot;: &quot;need_structure&quot;,
+							&quot;name&quot;: &quot;Structure&quot;,
+							&quot;category&quot;: &quot;needs&quot;,
+							&quot;percentile&quot;: 0.25900522208298893
+						}],
+						&quot;values&quot;: [{
+							&quot;trait_id&quot;: &quot;value_conservation&quot;,
+							&quot;name&quot;: &quot;Conservation&quot;,
+							&quot;category&quot;: &quot;values&quot;,
+							&quot;percentile&quot;: 0.025139288861989018
+						}, {
+							&quot;trait_id&quot;: &quot;value_openness_to_change&quot;,
+							&quot;name&quot;: &quot;Openness to change&quot;,
+							&quot;category&quot;: &quot;values&quot;,
+							&quot;percentile&quot;: 0.5327503661220926
+						}, {
+							&quot;trait_id&quot;: &quot;value_hedonism&quot;,
+							&quot;name&quot;: &quot;Hedonism&quot;,
+							&quot;category&quot;: &quot;values&quot;,
+							&quot;percentile&quot;: 0.12470460303026076
+						}, {
+							&quot;trait_id&quot;: &quot;value_self_enhancement&quot;,
+							&quot;name&quot;: &quot;Self-enhancement&quot;,
+							&quot;category&quot;: &quot;values&quot;,
+							&quot;percentile&quot;: 0.25380038725178367
+						}, {
+							&quot;trait_id&quot;: &quot;value_self_transcendence&quot;,
+							&quot;name&quot;: &quot;Self-transcendence&quot;,
+							&quot;category&quot;: &quot;values&quot;,
+							&quot;percentile&quot;: 0.2861053071367743
+						}],
+						&quot;warnings&quot;: [{
+							&quot;warning_id&quot;: &quot;WORD_COUNT_MESSAGE&quot;,
+							&quot;message&quot;: &quot;There were 103 words in the input. We need a minimum of 600, preferably 1,200 or more, to compute statistically significant estimates&quot;
+						}]
+					}" />
+				
+				
+				
+			</EquinoxRawData>
+			<EquinoxInstance>
+				<value val="" />
+			</EquinoxInstance>
+</EquinoxMessage>
+	</dummy-message>
+	
+	
+	<dummy-message id="5">
+		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >
+		<EquinoxRawData to="Entronica2018.E01.0" name="db" ctype="db" type="response" invoke="4" ret="0">
+			<ext-message command="search" result="0" id="4" objecttype="ErrorPartner" key="0,IBM,POST,PersonalityInsights,/v3/profile,0,200,,," data="word_count != &quot;&quot; ; {&quot;resultCode&quot;:&quot;20000&quot;,&quot;developerMessage&quot;:&quot;Success&quot;, &quot;data&quot;:{@data}} | images.classifiers != &quot;&quot; ; {&quot;resultCode&quot;:&quot;20000&quot;,&quot;developerMessage&quot;:&quot;Success&quot;, &quot;custom_classes&quot;:{@data.custom_classess}, &quot;images&quot;:{@data.images}, &quot;images_processed&quot;:{@data.images_processed}} | statusInfo == &quot;invalid-api-key&quot; AND status == &quot;ERROR&quot; ;  {&quot;resultCode&quot;:&quot;40100&quot;,&quot;developerMessage&quot;:&quot;Access is denied due to invalid credentials&quot;} | images.error.description == &quot;Failed fetching URL&quot; ; {&quot;resultCode&quot;:&quot;40401&quot;,&quot;developerMessage&quot;:&quot;URL Not found&quot;} | $response == &quot;{}&quot; ; {&quot;resultCode&quot;:&quot;20000&quot;,&quot;developerMessage&quot;:&quot;Success&quot;} | default ; {&quot;resultCode&quot;:&quot;50000&quot;,&quot;developerMessage&quot;:&quot;System error&quot;}"/>
+		</EquinoxRawData>
+			<EquinoxInstance>
+				<value- val="1::W_SEARCH_DNS_PARTNER::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJpZCI6IjIiLCJrZXlPYmplY3QiOnsiY29udGVudHMiOnsiMCI6IjAiLCIxIjoiSUJNIiwiMiI6IlBlcnNvbmFsaXR5SW5zaWdodHMiLCIzIjoicHJvZmlsZSIsIjQiOiIiLCJvYmplY3R0eXBlIjoiRE5TUGFydG5lciJ9fX19fQ==::" />
+			</EquinoxInstance>
+		</EquinoxMessage>
+	</dummy-message>
+	
+	
+</dummy-request>

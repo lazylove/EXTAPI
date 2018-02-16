@@ -1,0 +1,689 @@
+INFO|11:38:56:836|main|EC02Server|-1|EC02 :: Library Version --> 4.0.4
+DEBUG|11:38:57:014|main|ConfigLoader|-1|Initial Custom AF Log
+WARN|11:38:57:034|main|ConfigLoader|-1|testCustomLog : file name is rotated
+INFO|11:38:57:098|main|EC02Server|-1|application level ready
+DEBUG|11:38:57:236|main|EC02Handler|-1|Received data from LL Content-Length: 1880
+DEBUG|11:38:57:252|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage from="entronica2018.E11.0" via="entronica2018.E11.0"			session="669772775844604:00001" timeout="10" ret="0" diag="">			<EquinoxRawData name="HTTP" invoke="1" type="request" method="POST" url="/v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20" ctype="text/xml" to="entronica2018.ES00" orig="entronica2018.ES05.0.0" ret="0"> 								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							</EquinoxRawData>			<EquinoxInstance>				<value val="" />			</EquinoxInstance>		</EquinoxMessage>	
+DEBUG|11:38:57:283|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : entronica2018.E11.0
+-->diag  : 
+-->state  : IDLE
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message :  								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							
+	-->ret : 0
+	-->method : POST
+	-->ctype : text/xml
+	-->orig : entronica2018.ES05.0.0
+	-->name : HTTP
+	-->invoke : 1
+	-->to : entronica2018.ES00
+	-->type : request
+	-->url : /v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20
+ADEBUG|11:38:57:283|main|Entronica2018Application|53|[Start Process]
+ADEBUG|11:38:57:298|main|Entronica2018Application|54|[CURRENT STATE] : IDLE
+INFO|11:39:26:570|main|EC02Server|-1|EC02 :: Library Version --> 4.0.4
+DEBUG|11:39:26:586|main|ConfigLoader|-1|Initial Custom AF Log
+WARN|11:39:26:586|main|ConfigLoader|-1|testCustomLog : file name is rotated
+INFO|11:39:26:654|main|EC02Server|-1|application level ready
+DEBUG|11:39:26:770|main|EC02Handler|-1|Received data from LL Content-Length: 1880
+DEBUG|11:39:26:770|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage from="entronica2018.E11.0" via="entronica2018.E11.0"			session="669772775844604:00001" timeout="10" ret="0" diag="">			<EquinoxRawData name="HTTP" invoke="1" type="request" method="POST" url="/v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20" ctype="text/xml" to="entronica2018.ES00" orig="entronica2018.ES05.0.0" ret="0"> 								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							</EquinoxRawData>			<EquinoxInstance>				<value val="" />			</EquinoxInstance>		</EquinoxMessage>	
+DEBUG|11:39:26:802|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : entronica2018.E11.0
+-->diag  : 
+-->state  : IDLE
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message :  								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							
+	-->ret : 0
+	-->method : POST
+	-->ctype : text/xml
+	-->orig : entronica2018.ES05.0.0
+	-->name : HTTP
+	-->invoke : 1
+	-->to : entronica2018.ES00
+	-->type : request
+	-->url : /v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20
+ADEBUG|11:39:26:817|main|Entronica2018Application|53|[Start Process]
+ADEBUG|11:39:26:817|main|Entronica2018Application|54|[CURRENT STATE] : IDLE
+INFO|11:41:01:602|main|EC02Server|-1|EC02 :: Library Version --> 4.0.4
+DEBUG|11:41:01:624|main|ConfigLoader|-1|Initial Custom AF Log
+WARN|11:41:01:624|main|ConfigLoader|-1|testCustomLog : file name is rotated
+INFO|11:41:01:640|main|EC02Server|-1|application level ready
+DEBUG|11:41:01:756|main|EC02Handler|-1|Received data from LL Content-Length: 1880
+DEBUG|11:41:01:756|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage from="entronica2018.E11.0" via="entronica2018.E11.0"			session="669772775844604:00001" timeout="10" ret="0" diag="">			<EquinoxRawData name="HTTP" invoke="1" type="request" method="POST" url="/v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20" ctype="text/xml" to="entronica2018.ES00" orig="entronica2018.ES05.0.0" ret="0"> 								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							</EquinoxRawData>			<EquinoxInstance>				<value val="" />			</EquinoxInstance>		</EquinoxMessage>	
+DEBUG|11:41:01:787|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : entronica2018.E11.0
+-->diag  : 
+-->state  : IDLE
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message :  								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							
+	-->ret : 0
+	-->method : POST
+	-->ctype : text/xml
+	-->orig : entronica2018.ES05.0.0
+	-->name : HTTP
+	-->invoke : 1
+	-->to : entronica2018.ES00
+	-->type : request
+	-->url : /v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20
+ADEBUG|11:41:01:803|main|Entronica2018Application|53|[Start Process]
+ADEBUG|11:41:01:803|main|Entronica2018Application|54|[CURRENT STATE] : IDLE
+INFO|16:04:19:020|main|EC02Server|-1|EC02 :: Library Version --> 4.0.4
+DEBUG|16:04:19:051|main|ConfigLoader|-1|Initial Custom AF Log
+WARN|16:04:19:051|main|ConfigLoader|-1|testCustomLog : file name is rotated
+INFO|16:04:19:082|main|EC02Server|-1|application level ready
+DEBUG|16:04:19:182|main|EC02Handler|-1|Received data from LL Content-Length: 1880
+DEBUG|16:04:19:198|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage from="entronica2018.E11.0" via="entronica2018.E11.0"			session="669772775844604:00001" timeout="10" ret="0" diag="">			<EquinoxRawData name="HTTP" invoke="1" type="request" method="POST" url="/v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20" ctype="text/xml" to="entronica2018.ES00" orig="entronica2018.ES05.0.0" ret="0"> 								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							</EquinoxRawData>			<EquinoxInstance>				<value val="" />			</EquinoxInstance>		</EquinoxMessage>	
+DEBUG|16:04:19:229|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : entronica2018.E11.0
+-->diag  : 
+-->state  : IDLE
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message :  								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							
+	-->ret : 0
+	-->method : POST
+	-->ctype : text/xml
+	-->orig : entronica2018.ES05.0.0
+	-->name : HTTP
+	-->invoke : 1
+	-->to : entronica2018.ES00
+	-->type : request
+	-->url : /v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20
+ADEBUG|16:04:19:245|main|Entronica2018Application|53|[Start Process]
+ADEBUG|16:04:19:245|main|Entronica2018Application|54|[CURRENT STATE] : IDLE
+ADEBUG|16:04:19:432|main|Entronica2018Application|60|[End Process]
+DEBUG|16:04:19:432|main|AFProxy|-1|action process completed :: 187
+DEBUG|16:04:19:448|main|EC02Controller|-1|=== >> OUTGOING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.ES00
+-->diag  : 
+-->state  : W_SERVICE_CREDENTIAL
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->message : <ERDHeader><Header name="x-command-id" value="myAis-1505981226052-0001" /></ERDHeader><ERDData value=""/>
+	-->ret : 0
+	-->method : GET
+	-->ctype : text/xml
+	-->name : HTTP
+	-->invoke : 2
+	-->to : Entronica2018.ES04.Service.0
+	-->type : request
+	-->url : /v1/ServiceManagement/ServiceCredentail/PersonalityInsights?appName=myAis
+DEBUG|16:04:19:463|main|EC02Handler|-1|
+#====> Outgoing Message is:<?xml version="1.0" encoding="tis-620" ?><EquinoxMessage diag="" from="Entronica2018.ES00" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" ><EquinoxRawData ret="0" method="GET" ctype="text/xml" name="HTTP" invoke="2" to="Entronica2018.ES04.Service.0" type="request" url="/v1/ServiceManagement/ServiceCredentail/PersonalityInsights?appName=myAis" ><ERDHeader><Header name="x-command-id" value="myAis-1505981226052-0001" /></ERDHeader><ERDData value=""/></EquinoxRawData><EquinoxInstance><value val="1::W_SERVICE_CREDENTIAL::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJlcXhNc2dNb2RlbCI6eyJoZWFkZXIiOlt7Im5hbWUiOiJ4LWNvbW1hbmQtaWQiLCJ2YWx1ZSI6Im15QWlzLTE1MDU5ODEyMjYwNTItMDAwMSJ9XSwiY29udGVudE1lc3NhZ2UiOiIifSwic2VydmljZSI6IlNlcnZpY2UuMCJ9fX0=::" /></EquinoxInstance></EquinoxMessage>
+DEBUG|16:04:19:463|main|EC02Handler|-1|
+-->TIME,total Processing Time(msec) : 265
+-->TIME,application process (msec) :203
+-->TIME,ec02 process(msec) : 62
+DEBUG|16:04:19:479|main|EC02Handler|-1|Received data from LL Content-Length: 1432
+DEBUG|16:04:19:479|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >			<EquinoxRawData ret="0" method="GET" ctype="text/xml" name="HTTP" ecode="200" invoke="2" to="Entronica2018.ES00.0" orig="Entrinica2018.ES05.0" type="response"  >				<ERDHeader>				 <Header name="Content-Type" value="application/json" />				</ERDHeader>				<ERDData value="{					&quot;resultCode&quot;: &quot;20000&quot;,					&quot;developerMessage&quot;: &quot;Success&quot;,					&quot;username&quot;: &quot;bc93eb8a-341b-40a7-9800-127ee35cc664&quot;,					&quot;password&quot;: &quot;FAM6GfxGA3GF&quot;,					&quot;url&quot;: &quot;https://gateway.watsonplatform.net/personality-insights/api&quot;				}"/>							</EquinoxRawData>			<EquinoxInstance><value val="1::W_SERVICE_CREDENTIAL::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJlcXhNc2dNb2RlbCI6eyJoZWFkZXIiOlt7Im5hbWUiOiJ4LWNvbW1hbmQtaWQiLCJ2YWx1ZSI6Im15QWlzLTE1MDU5ODEyMjYwNTItMDAwMSJ9XSwiY29udGVudE1lc3NhZ2UiOiIifSwic2VydmljZSI6IlNlcnZpY2UuMCJ9fX0=::" /></EquinoxInstance></EquinoxMessage>	
+DEBUG|16:04:19:495|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.E11
+-->diag  : 
+-->state  : W_SERVICE_CREDENTIAL
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message : 				<ERDHeader>				 <Header name="Content-Type" value="application/json" />				</ERDHeader>				<ERDData value="{					&quot;resultCode&quot;: &quot;20000&quot;,					&quot;developerMessage&quot;: &quot;Success&quot;,					&quot;username&quot;: &quot;bc93eb8a-341b-40a7-9800-127ee35cc664&quot;,					&quot;password&quot;: &quot;FAM6GfxGA3GF&quot;,					&quot;url&quot;: &quot;https://gateway.watsonplatform.net/personality-insights/api&quot;				}"/>							
+	-->ret : 0
+	-->method : GET
+	-->ctype : text/xml
+	-->orig : Entrinica2018.ES05.0
+	-->name : HTTP
+	-->invoke : 2
+	-->to : Entronica2018.ES00.0
+	-->type : response
+	-->ecode : 200
+ADEBUG|16:04:19:495|main|Entronica2018Application|53|[Start Process]
+ADEBUG|16:04:19:510|main|Entronica2018Application|54|[CURRENT STATE] : W_SERVICE_CREDENTIAL
+ADEBUG|16:04:19:557|main|Entronica2018Application|60|[End Process]
+DEBUG|16:04:19:573|main|AFProxy|-1|action process completed :: 78
+DEBUG|16:04:19:573|main|EC02Controller|-1|=== >> OUTGOING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.ES00
+-->diag  : 
+-->state  : W_SEARCH_DNS_PARTNER
+-->timeout  : 10
+
+-->rawdata(s)  : no raw data
+DEBUG|16:04:19:588|main|EC02Handler|-1|
+#====> Outgoing Message is:<?xml version="1.0" encoding="tis-620" ?><EquinoxMessage diag="" from="Entronica2018.ES00" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" ><EquinoxRawData to="Entronica2018.E01.0" name="db" ctype="db" type="request" invoke="2" ><message command="search" id="2" objecttype="DNSPartner" key0="0" key1="IBM" key2="PersonalityInsights" key3="profile" key4="" ><data value=""/></message></EquinoxRawData><EquinoxInstance><value val="1::W_SEARCH_DNS_PARTNER::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJpZCI6IjIiLCJrZXlPYmplY3QiOnsiY29udGVudHMiOnsiMCI6IjAiLCIxIjoiSUJNIiwiMiI6IlBlcnNvbmFsaXR5SW5zaWdodHMiLCIzIjoicHJvZmlsZSIsIjQiOiIiLCJvYmplY3R0eXBlIjoiRE5TUGFydG5lciJ9fX19fQ==::" /></EquinoxInstance></EquinoxMessage>
+DEBUG|16:04:19:588|main|EC02Handler|-1|
+-->TIME,total Processing Time(msec) : 109
+-->TIME,application process (msec) :78
+-->TIME,ec02 process(msec) : 31
+INFO|16:58:47:201|main|EC02Server|-1|EC02 :: Library Version --> 4.0.4
+DEBUG|16:58:47:209|main|ConfigLoader|-1|Initial Custom AF Log
+WARN|16:58:47:222|main|ConfigLoader|-1|testCustomLog : file name is rotated
+INFO|16:58:47:239|main|EC02Server|-1|application level ready
+DEBUG|16:58:47:355|main|EC02Handler|-1|Received data from LL Content-Length: 1880
+DEBUG|16:58:47:366|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage from="entronica2018.E11.0" via="entronica2018.E11.0"			session="669772775844604:00001" timeout="10" ret="0" diag="">			<EquinoxRawData name="HTTP" invoke="1" type="request" method="POST" url="/v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20" ctype="text/xml" to="entronica2018.ES00" orig="entronica2018.ES05.0.0" ret="0"> 								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							</EquinoxRawData>			<EquinoxInstance>				<value val="" />			</EquinoxInstance>		</EquinoxMessage>	
+DEBUG|16:58:47:404|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : entronica2018.E11.0
+-->diag  : 
+-->state  : IDLE
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message :  								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							
+	-->ret : 0
+	-->method : POST
+	-->ctype : text/xml
+	-->orig : entronica2018.ES05.0.0
+	-->name : HTTP
+	-->invoke : 1
+	-->to : entronica2018.ES00
+	-->type : request
+	-->url : /v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20
+ADEBUG|16:58:47:411|main|Entronica2018Application|53|[Start Process]
+ADEBUG|16:58:47:418|main|Entronica2018Application|54|[CURRENT STATE] : IDLE
+ADEBUG|16:58:47:542|main|Entronica2018Application|60|[End Process]
+DEBUG|16:58:47:551|main|AFProxy|-1|action process completed :: 141
+DEBUG|16:58:47:558|main|EC02Controller|-1|=== >> OUTGOING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.ES00
+-->diag  : 
+-->state  : W_SERVICE_CREDENTIAL
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->message : <ERDHeader><Header name="x-command-id" value="myAis-1505981226052-0001" /></ERDHeader><ERDData value=""/>
+	-->ret : 0
+	-->method : GET
+	-->ctype : text/xml
+	-->name : HTTP
+	-->invoke : 2
+	-->to : Entronica2018.ES04.Service.0
+	-->type : request
+	-->url : /v1/ServiceManagement/ServiceCredentail/PersonalityInsights?appName=myAis
+DEBUG|16:58:47:583|main|EC02Handler|-1|
+#====> Outgoing Message is:<?xml version="1.0" encoding="tis-620" ?><EquinoxMessage diag="" from="Entronica2018.ES00" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" ><EquinoxRawData ret="0" method="GET" ctype="text/xml" name="HTTP" invoke="2" to="Entronica2018.ES04.Service.0" type="request" url="/v1/ServiceManagement/ServiceCredentail/PersonalityInsights?appName=myAis" ><ERDHeader><Header name="x-command-id" value="myAis-1505981226052-0001" /></ERDHeader><ERDData value=""/></EquinoxRawData><EquinoxInstance><value val="1::W_SERVICE_CREDENTIAL::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJlcXhNc2dNb2RlbCI6eyJoZWFkZXIiOlt7Im5hbWUiOiJ4LWNvbW1hbmQtaWQiLCJ2YWx1ZSI6Im15QWlzLTE1MDU5ODEyMjYwNTItMDAwMSJ9XSwiY29udGVudE1lc3NhZ2UiOiIifSwic2VydmljZSI6IlNlcnZpY2UuMCJ9fX0=::" /></EquinoxInstance></EquinoxMessage>
+DEBUG|16:58:47:593|main|EC02Handler|-1|
+-->TIME,total Processing Time(msec) : 227
+-->TIME,application process (msec) :148
+-->TIME,ec02 process(msec) : 79
+DEBUG|16:58:47:603|main|EC02Handler|-1|Received data from LL Content-Length: 1432
+DEBUG|16:58:47:613|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >			<EquinoxRawData ret="0" method="GET" ctype="text/xml" name="HTTP" ecode="200" invoke="2" to="Entronica2018.ES00.0" orig="Entrinica2018.ES05.0" type="response"  >				<ERDHeader>				 <Header name="Content-Type" value="application/json" />				</ERDHeader>				<ERDData value="{					&quot;resultCode&quot;: &quot;20000&quot;,					&quot;developerMessage&quot;: &quot;Success&quot;,					&quot;username&quot;: &quot;bc93eb8a-341b-40a7-9800-127ee35cc664&quot;,					&quot;password&quot;: &quot;FAM6GfxGA3GF&quot;,					&quot;url&quot;: &quot;https://gateway.watsonplatform.net/personality-insights/api&quot;				}"/>							</EquinoxRawData>			<EquinoxInstance><value val="1::W_SERVICE_CREDENTIAL::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJlcXhNc2dNb2RlbCI6eyJoZWFkZXIiOlt7Im5hbWUiOiJ4LWNvbW1hbmQtaWQiLCJ2YWx1ZSI6Im15QWlzLTE1MDU5ODEyMjYwNTItMDAwMSJ9XSwiY29udGVudE1lc3NhZ2UiOiIifSwic2VydmljZSI6IlNlcnZpY2UuMCJ9fX0=::" /></EquinoxInstance></EquinoxMessage>	
+DEBUG|16:58:47:627|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.E11
+-->diag  : 
+-->state  : W_SERVICE_CREDENTIAL
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message : 				<ERDHeader>				 <Header name="Content-Type" value="application/json" />				</ERDHeader>				<ERDData value="{					&quot;resultCode&quot;: &quot;20000&quot;,					&quot;developerMessage&quot;: &quot;Success&quot;,					&quot;username&quot;: &quot;bc93eb8a-341b-40a7-9800-127ee35cc664&quot;,					&quot;password&quot;: &quot;FAM6GfxGA3GF&quot;,					&quot;url&quot;: &quot;https://gateway.watsonplatform.net/personality-insights/api&quot;				}"/>							
+	-->ret : 0
+	-->method : GET
+	-->ctype : text/xml
+	-->orig : Entrinica2018.ES05.0
+	-->name : HTTP
+	-->invoke : 2
+	-->to : Entronica2018.ES00.0
+	-->type : response
+	-->ecode : 200
+ADEBUG|16:58:47:636|main|Entronica2018Application|53|[Start Process]
+ADEBUG|16:58:47:642|main|Entronica2018Application|54|[CURRENT STATE] : W_SERVICE_CREDENTIAL
+ADEBUG|16:58:47:663|main|Entronica2018Application|60|[End Process]
+DEBUG|16:58:47:670|main|AFProxy|-1|action process completed :: 34
+DEBUG|16:58:47:677|main|EC02Controller|-1|=== >> OUTGOING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.ES00
+-->diag  : 
+-->state  : W_SEARCH_DNS_PARTNER
+-->timeout  : 10
+
+-->rawdata(s)  : no raw data
+DEBUG|16:58:47:684|main|EC02Handler|-1|
+#====> Outgoing Message is:<?xml version="1.0" encoding="tis-620" ?><EquinoxMessage diag="" from="Entronica2018.ES00" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" ><EquinoxRawData to="Entronica2018.E01.0" name="db" ctype="db" type="request" invoke="2" ><message command="search" id="2" objecttype="DNSPartner" key0="0" key1="IBM" key2="PersonalityInsights" key3="profile" key4="" ><data value=""/></message></EquinoxRawData><EquinoxInstance><value val="1::W_SEARCH_DNS_PARTNER::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJpZCI6IjIiLCJrZXlPYmplY3QiOnsiY29udGVudHMiOnsiMCI6IjAiLCIxIjoiSUJNIiwiMiI6IlBlcnNvbmFsaXR5SW5zaWdodHMiLCIzIjoicHJvZmlsZSIsIjQiOiIiLCJvYmplY3R0eXBlIjoiRE5TUGFydG5lciJ9fX19fQ==::" /></EquinoxInstance></EquinoxMessage>
+DEBUG|16:58:47:691|main|EC02Handler|-1|
+-->TIME,total Processing Time(msec) : 78
+-->TIME,application process (msec) :41
+-->TIME,ec02 process(msec) : 37
+DEBUG|16:58:47:700|main|EC02Handler|-1|Received data from LL Content-Length: 1428
+DEBUG|16:58:47:709|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >			<EquinoxRawData to="Entronica2018.E01.0" name="db" ctype="db" type="request" invoke="2" ret="0" >				<message command="search" id="2" objecttype="DNSPartner" key0="0" key1="IBM" key2="PersonalityInsights" key3="profile" key4="" >					<data value="{					&quot;service&quot;: &quot;ExternalAPI.ES04.Watson&quot;,					&quot;url&quot;: &quot;/v3/profile&quot;,					&quot;authenType&quot;: &quot;userPwd&quot;,					&quot;requestHeader&quot;: [Content-Type&quot;, &quot;Accept&quot;, &quot;Content-Language&quot;, &quot;Accept-Language&quot;, &quot;X-Watson-Learning-Opt-Out&quot;]				}					"/>				</message>			</EquinoxRawData>			<EquinoxInstance><value val="1::W_SEARCH_DNS_PARTNER::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJpZCI6IjIiLCJrZXlPYmplY3QiOnsiY29udGVudHMiOnsiMCI6IjAiLCIxIjoiSUJNIiwiMiI6IlBlcnNvbmFsaXR5SW5zaWdodHMiLCIzIjoicHJvZmlsZSIsIjQiOiIiLCJvYmplY3R0eXBlIjoiRE5TUGFydG5lciJ9fX19fQ==::" /></EquinoxInstance>		</EquinoxMessage>	
+DEBUG|16:58:47:720|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.E11
+-->diag  : 
+-->state  : W_SEARCH_DNS_PARTNER
+-->timeout  : 10
+
+-->rawdata(s)  : no raw data
+ADEBUG|16:58:47:726|main|Entronica2018Application|53|[Start Process]
+ADEBUG|16:58:47:732|main|Entronica2018Application|54|[CURRENT STATE] : W_SEARCH_DNS_PARTNER
+INFO|17:09:10:696|main|EC02Server|-1|EC02 :: Library Version --> 4.0.4
+DEBUG|17:09:10:704|main|ConfigLoader|-1|Initial Custom AF Log
+WARN|17:09:10:718|main|ConfigLoader|-1|testCustomLog : file name is rotated
+INFO|17:09:10:732|main|EC02Server|-1|application level ready
+DEBUG|17:09:10:819|main|EC02Handler|-1|Received data from LL Content-Length: 1880
+DEBUG|17:09:10:828|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage from="entronica2018.E11.0" via="entronica2018.E11.0"			session="669772775844604:00001" timeout="10" ret="0" diag="">			<EquinoxRawData name="HTTP" invoke="1" type="request" method="POST" url="/v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20" ctype="text/xml" to="entronica2018.ES00" orig="entronica2018.ES05.0.0" ret="0"> 								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							</EquinoxRawData>			<EquinoxInstance>				<value val="" />			</EquinoxInstance>		</EquinoxMessage>	
+DEBUG|17:09:10:858|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : entronica2018.E11.0
+-->diag  : 
+-->state  : IDLE
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message :  								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							
+	-->ret : 0
+	-->method : POST
+	-->ctype : text/xml
+	-->orig : entronica2018.ES05.0.0
+	-->name : HTTP
+	-->invoke : 1
+	-->to : entronica2018.ES00
+	-->type : request
+	-->url : /v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20
+ADEBUG|17:09:10:865|main|Entronica2018Application|53|[Start Process]
+ADEBUG|17:09:10:873|main|Entronica2018Application|54|[CURRENT STATE] : IDLE
+ADEBUG|17:09:10:959|main|Entronica2018Application|60|[End Process]
+DEBUG|17:09:10:965|main|AFProxy|-1|action process completed :: 100
+DEBUG|17:09:10:970|main|EC02Controller|-1|=== >> OUTGOING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.ES00
+-->diag  : 
+-->state  : W_SERVICE_CREDENTIAL
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->message : <ERDHeader><Header name="x-command-id" value="myAis-1505981226052-0001" /></ERDHeader><ERDData value=""/>
+	-->ret : 0
+	-->method : GET
+	-->ctype : text/xml
+	-->name : HTTP
+	-->invoke : 2
+	-->to : Entronica2018.ES04.Service.0
+	-->type : request
+	-->url : /v1/ServiceManagement/ServiceCredentail/PersonalityInsights?appName=myAis
+DEBUG|17:09:10:989|main|EC02Handler|-1|
+#====> Outgoing Message is:<?xml version="1.0" encoding="tis-620" ?><EquinoxMessage diag="" from="Entronica2018.ES00" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" ><EquinoxRawData ret="0" method="GET" ctype="text/xml" name="HTTP" invoke="2" to="Entronica2018.ES04.Service.0" type="request" url="/v1/ServiceManagement/ServiceCredentail/PersonalityInsights?appName=myAis" ><ERDHeader><Header name="x-command-id" value="myAis-1505981226052-0001" /></ERDHeader><ERDData value=""/></EquinoxRawData><EquinoxInstance><value val="1::W_SERVICE_CREDENTIAL::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJlcXhNc2dNb2RlbCI6eyJoZWFkZXIiOlt7Im5hbWUiOiJ4LWNvbW1hbmQtaWQiLCJ2YWx1ZSI6Im15QWlzLTE1MDU5ODEyMjYwNTItMDAwMSJ9XSwiY29udGVudE1lc3NhZ2UiOiIifSwic2VydmljZSI6IlNlcnZpY2UuMCJ9fX0=::" /></EquinoxInstance></EquinoxMessage>
+DEBUG|17:09:10:995|main|EC02Handler|-1|
+-->TIME,total Processing Time(msec) : 168
+-->TIME,application process (msec) :105
+-->TIME,ec02 process(msec) : 63
+DEBUG|17:09:11:005|main|EC02Handler|-1|Received data from LL Content-Length: 1432
+DEBUG|17:09:11:014|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >			<EquinoxRawData ret="0" method="GET" ctype="text/xml" name="HTTP" ecode="200" invoke="2" to="Entronica2018.ES00.0" orig="Entrinica2018.ES05.0" type="response"  >				<ERDHeader>				 <Header name="Content-Type" value="application/json" />				</ERDHeader>				<ERDData value="{					&quot;resultCode&quot;: &quot;20000&quot;,					&quot;developerMessage&quot;: &quot;Success&quot;,					&quot;username&quot;: &quot;bc93eb8a-341b-40a7-9800-127ee35cc664&quot;,					&quot;password&quot;: &quot;FAM6GfxGA3GF&quot;,					&quot;url&quot;: &quot;https://gateway.watsonplatform.net/personality-insights/api&quot;				}"/>							</EquinoxRawData>			<EquinoxInstance><value val="1::W_SERVICE_CREDENTIAL::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJlcXhNc2dNb2RlbCI6eyJoZWFkZXIiOlt7Im5hbWUiOiJ4LWNvbW1hbmQtaWQiLCJ2YWx1ZSI6Im15QWlzLTE1MDU5ODEyMjYwNTItMDAwMSJ9XSwiY29udGVudE1lc3NhZ2UiOiIifSwic2VydmljZSI6IlNlcnZpY2UuMCJ9fX0=::" /></EquinoxInstance></EquinoxMessage>	
+DEBUG|17:09:11:026|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.E11
+-->diag  : 
+-->state  : W_SERVICE_CREDENTIAL
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message : 				<ERDHeader>				 <Header name="Content-Type" value="application/json" />				</ERDHeader>				<ERDData value="{					&quot;resultCode&quot;: &quot;20000&quot;,					&quot;developerMessage&quot;: &quot;Success&quot;,					&quot;username&quot;: &quot;bc93eb8a-341b-40a7-9800-127ee35cc664&quot;,					&quot;password&quot;: &quot;FAM6GfxGA3GF&quot;,					&quot;url&quot;: &quot;https://gateway.watsonplatform.net/personality-insights/api&quot;				}"/>							
+	-->ret : 0
+	-->method : GET
+	-->ctype : text/xml
+	-->orig : Entrinica2018.ES05.0
+	-->name : HTTP
+	-->invoke : 2
+	-->to : Entronica2018.ES00.0
+	-->type : response
+	-->ecode : 200
+ADEBUG|17:09:11:034|main|Entronica2018Application|53|[Start Process]
+ADEBUG|17:09:11:040|main|Entronica2018Application|54|[CURRENT STATE] : W_SERVICE_CREDENTIAL
+ADEBUG|17:09:11:058|main|Entronica2018Application|60|[End Process]
+DEBUG|17:09:11:065|main|AFProxy|-1|action process completed :: 30
+DEBUG|17:09:11:071|main|EC02Controller|-1|=== >> OUTGOING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.ES00
+-->diag  : 
+-->state  : W_SEARCH_DNS_PARTNER
+-->timeout  : 10
+
+-->rawdata(s)  : no raw data
+DEBUG|17:09:11:078|main|EC02Handler|-1|
+#====> Outgoing Message is:<?xml version="1.0" encoding="tis-620" ?><EquinoxMessage diag="" from="Entronica2018.ES00" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" ><EquinoxRawData to="Entronica2018.E01.0" name="db" ctype="db" type="request" invoke="2" ><ext-message command="search" id="2" objecttype="DNSPartner" key="0,IBM,PersonalityInsights,profile," data=""/></EquinoxRawData><EquinoxInstance><value val="1::W_SEARCH_DNS_PARTNER::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJpZCI6IjIiLCJvYmplY3RUeXBlIjoiRE5TUGFydG5lciIsImtleUUwMSI6WyIwIiwiSUJNIiwiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInByb2ZpbGUiLCIiXX19fQ==::" /></EquinoxInstance></EquinoxMessage>
+DEBUG|17:09:11:084|main|EC02Handler|-1|
+-->TIME,total Processing Time(msec) : 71
+-->TIME,application process (msec) :36
+-->TIME,ec02 process(msec) : 35
+DEBUG|17:09:11:093|main|EC02Handler|-1|Received data from LL Content-Length: 1380
+DEBUG|17:09:11:101|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >			<EquinoxRawData to="Entronica2018.E01.0" name="db" ctype="db" type="request" invoke="2" ret="0" >				<message command="search" id="2" objecttype="DNSPartner" key0="0" key1="IBM" key2="PersonalityInsights" key3="profile" key4="" >					<data value="{					&quot;service&quot;: &quot;ExternalAPI.ES04.Watson&quot;,					&quot;url&quot;: &quot;/v3/profile&quot;,					&quot;authenType&quot;: &quot;userPwd&quot;,					&quot;requestHeader&quot;: [Content-Type&quot;, &quot;Accept&quot;, &quot;Content-Language&quot;, &quot;Accept-Language&quot;, &quot;X-Watson-Learning-Opt-Out&quot;]				}					"/>				</message>			</EquinoxRawData>			<EquinoxInstance><value val="1::W_SEARCH_DNS_PARTNER::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJpZCI6IjIiLCJvYmplY3RUeXBlIjoiRE5TUGFydG5lciIsImtleUUwMSI6WyIwIiwiSUJNIiwiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInByb2ZpbGUiLCIiXX19fQ==::" /></EquinoxInstance>		</EquinoxMessage>	
+DEBUG|17:09:11:112|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.E11
+-->diag  : 
+-->state  : W_SEARCH_DNS_PARTNER
+-->timeout  : 10
+
+-->rawdata(s)  : no raw data
+ADEBUG|17:09:11:117|main|Entronica2018Application|53|[Start Process]
+ADEBUG|17:09:11:123|main|Entronica2018Application|54|[CURRENT STATE] : W_SEARCH_DNS_PARTNER
+ADEBUG|17:09:11:131|main|Entronica2018Application|60|[End Process]
+DEBUG|17:09:11:136|main|AFProxy|-1|action process completed :: 19
+ERROR|17:09:11:141|main|EC02Controller|-1||application error
+ec02.exception.EC02ControllerException: ECDialogue is null
+	at ec02.controller.EC02Controller.execute(Unknown Source) [ec02_dev.jar:?]
+	at ec02.controller.EC02Controller.process(Unknown Source) [ec02_dev.jar:?]
+	at ec02.server.EC02Handler.handle(Unknown Source) [ec02_dev.jar:?]
+	at ec02.tools.dev.AFTest.sendMessage(Unknown Source) [ec02_dev.jar:?]
+	at ec02.tools.dev.AFTest.run(Unknown Source) [ec02_dev.jar:?]
+	at th.co.entronica.tester.TestDebug.main(TestDebug.java:16) [bin/:?]
+DEBUG|17:09:11:151|main|EC02Handler|-1|
+#====> Outgoing Message is:<?xml version="1.0" encoding="tis-620" ?><EquinoxMessage diag="application error" from="Entronica2018.ES00" ret="2" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" ><EquinoxInstance><value val="1::W_SEARCH_DNS_PARTNER::false::::" /></EquinoxInstance></EquinoxMessage>
+DEBUG|17:09:11:159|main|EC02Handler|-1|
+-->TIME,total Processing Time(msec) : 58
+-->TIME,application process (msec) :24
+-->TIME,ec02 process(msec) : 34
+INFO|17:09:30:740|main|EC02Server|-1|EC02 :: Library Version --> 4.0.4
+DEBUG|17:09:30:748|main|ConfigLoader|-1|Initial Custom AF Log
+WARN|17:09:30:764|main|ConfigLoader|-1|testCustomLog : file name is rotated
+INFO|17:09:30:783|main|EC02Server|-1|application level ready
+DEBUG|17:09:30:897|main|EC02Handler|-1|Received data from LL Content-Length: 1880
+DEBUG|17:09:30:909|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage from="entronica2018.E11.0" via="entronica2018.E11.0"			session="669772775844604:00001" timeout="10" ret="0" diag="">			<EquinoxRawData name="HTTP" invoke="1" type="request" method="POST" url="/v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20" ctype="text/xml" to="entronica2018.ES00" orig="entronica2018.ES05.0.0" ret="0"> 								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							</EquinoxRawData>			<EquinoxInstance>				<value val="" />			</EquinoxInstance>		</EquinoxMessage>	
+DEBUG|17:09:30:949|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : entronica2018.E11.0
+-->diag  : 
+-->state  : IDLE
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message :  								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							
+	-->ret : 0
+	-->method : POST
+	-->ctype : text/xml
+	-->orig : entronica2018.ES05.0.0
+	-->name : HTTP
+	-->invoke : 1
+	-->to : entronica2018.ES00
+	-->type : request
+	-->url : /v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20
+ADEBUG|17:09:30:958|main|Entronica2018Application|53|[Start Process]
+ADEBUG|17:09:30:964|main|Entronica2018Application|54|[CURRENT STATE] : IDLE
+ADEBUG|17:09:31:078|main|Entronica2018Application|60|[End Process]
+DEBUG|17:09:31:084|main|AFProxy|-1|action process completed :: 127
+DEBUG|17:09:31:090|main|EC02Controller|-1|=== >> OUTGOING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.ES00
+-->diag  : 
+-->state  : W_SERVICE_CREDENTIAL
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->message : <ERDHeader><Header name="x-command-id" value="myAis-1505981226052-0001" /></ERDHeader><ERDData value=""/>
+	-->ret : 0
+	-->method : GET
+	-->ctype : text/xml
+	-->name : HTTP
+	-->invoke : 2
+	-->to : Entronica2018.ES04.Service.0
+	-->type : request
+	-->url : /v1/ServiceManagement/ServiceCredentail/PersonalityInsights?appName=myAis
+DEBUG|17:09:31:109|main|EC02Handler|-1|
+#====> Outgoing Message is:<?xml version="1.0" encoding="tis-620" ?><EquinoxMessage diag="" from="Entronica2018.ES00" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" ><EquinoxRawData ret="0" method="GET" ctype="text/xml" name="HTTP" invoke="2" to="Entronica2018.ES04.Service.0" type="request" url="/v1/ServiceManagement/ServiceCredentail/PersonalityInsights?appName=myAis" ><ERDHeader><Header name="x-command-id" value="myAis-1505981226052-0001" /></ERDHeader><ERDData value=""/></EquinoxRawData><EquinoxInstance><value val="1::W_SERVICE_CREDENTIAL::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJlcXhNc2dNb2RlbCI6eyJoZWFkZXIiOlt7Im5hbWUiOiJ4LWNvbW1hbmQtaWQiLCJ2YWx1ZSI6Im15QWlzLTE1MDU5ODEyMjYwNTItMDAwMSJ9XSwiY29udGVudE1lc3NhZ2UiOiIifSwic2VydmljZSI6IlNlcnZpY2UuMCJ9fX0=::" /></EquinoxInstance></EquinoxMessage>
+DEBUG|17:09:31:116|main|EC02Handler|-1|
+-->TIME,total Processing Time(msec) : 206
+-->TIME,application process (msec) :133
+-->TIME,ec02 process(msec) : 73
+DEBUG|17:09:31:127|main|EC02Handler|-1|Received data from LL Content-Length: 1432
+DEBUG|17:09:31:139|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >			<EquinoxRawData ret="0" method="GET" ctype="text/xml" name="HTTP" ecode="200" invoke="2" to="Entronica2018.ES00.0" orig="Entrinica2018.ES05.0" type="response"  >				<ERDHeader>				 <Header name="Content-Type" value="application/json" />				</ERDHeader>				<ERDData value="{					&quot;resultCode&quot;: &quot;20000&quot;,					&quot;developerMessage&quot;: &quot;Success&quot;,					&quot;username&quot;: &quot;bc93eb8a-341b-40a7-9800-127ee35cc664&quot;,					&quot;password&quot;: &quot;FAM6GfxGA3GF&quot;,					&quot;url&quot;: &quot;https://gateway.watsonplatform.net/personality-insights/api&quot;				}"/>							</EquinoxRawData>			<EquinoxInstance><value val="1::W_SERVICE_CREDENTIAL::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJlcXhNc2dNb2RlbCI6eyJoZWFkZXIiOlt7Im5hbWUiOiJ4LWNvbW1hbmQtaWQiLCJ2YWx1ZSI6Im15QWlzLTE1MDU5ODEyMjYwNTItMDAwMSJ9XSwiY29udGVudE1lc3NhZ2UiOiIifSwic2VydmljZSI6IlNlcnZpY2UuMCJ9fX0=::" /></EquinoxInstance></EquinoxMessage>	
+DEBUG|17:09:31:151|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.E11
+-->diag  : 
+-->state  : W_SERVICE_CREDENTIAL
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message : 				<ERDHeader>				 <Header name="Content-Type" value="application/json" />				</ERDHeader>				<ERDData value="{					&quot;resultCode&quot;: &quot;20000&quot;,					&quot;developerMessage&quot;: &quot;Success&quot;,					&quot;username&quot;: &quot;bc93eb8a-341b-40a7-9800-127ee35cc664&quot;,					&quot;password&quot;: &quot;FAM6GfxGA3GF&quot;,					&quot;url&quot;: &quot;https://gateway.watsonplatform.net/personality-insights/api&quot;				}"/>							
+	-->ret : 0
+	-->method : GET
+	-->ctype : text/xml
+	-->orig : Entrinica2018.ES05.0
+	-->name : HTTP
+	-->invoke : 2
+	-->to : Entronica2018.ES00.0
+	-->type : response
+	-->ecode : 200
+ADEBUG|17:09:31:159|main|Entronica2018Application|53|[Start Process]
+ADEBUG|17:09:31:165|main|Entronica2018Application|54|[CURRENT STATE] : W_SERVICE_CREDENTIAL
+ADEBUG|17:09:31:185|main|Entronica2018Application|60|[End Process]
+DEBUG|17:09:31:192|main|AFProxy|-1|action process completed :: 33
+DEBUG|17:09:31:199|main|EC02Controller|-1|=== >> OUTGOING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.ES00
+-->diag  : 
+-->state  : W_SEARCH_DNS_PARTNER
+-->timeout  : 10
+
+-->rawdata(s)  : no raw data
+DEBUG|17:09:31:207|main|EC02Handler|-1|
+#====> Outgoing Message is:<?xml version="1.0" encoding="tis-620" ?><EquinoxMessage diag="" from="Entronica2018.ES00" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" ><EquinoxRawData to="Entronica2018.E01.0" name="db" ctype="db" type="request" invoke="2" ><ext-message command="search" id="2" objecttype="DNSPartner" key="0,IBM,PersonalityInsights,profile," data=""/></EquinoxRawData><EquinoxInstance><value val="1::W_SEARCH_DNS_PARTNER::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJpZCI6IjIiLCJvYmplY3RUeXBlIjoiRE5TUGFydG5lciIsImtleUUwMSI6WyIwIiwiSUJNIiwiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInByb2ZpbGUiLCIiXX19fQ==::" /></EquinoxInstance></EquinoxMessage>
+DEBUG|17:09:31:216|main|EC02Handler|-1|
+-->TIME,total Processing Time(msec) : 77
+-->TIME,application process (msec) :40
+-->TIME,ec02 process(msec) : 37
+DEBUG|17:09:31:226|main|EC02Handler|-1|Received data from LL Content-Length: 1380
+DEBUG|17:09:31:238|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >			<EquinoxRawData to="Entronica2018.E01.0" name="db" ctype="db" type="request" invoke="2" ret="0" >				<message command="search" id="2" objecttype="DNSPartner" key0="0" key1="IBM" key2="PersonalityInsights" key3="profile" key4="" >					<data value="{					&quot;service&quot;: &quot;ExternalAPI.ES04.Watson&quot;,					&quot;url&quot;: &quot;/v3/profile&quot;,					&quot;authenType&quot;: &quot;userPwd&quot;,					&quot;requestHeader&quot;: [Content-Type&quot;, &quot;Accept&quot;, &quot;Content-Language&quot;, &quot;Accept-Language&quot;, &quot;X-Watson-Learning-Opt-Out&quot;]				}					"/>				</message>			</EquinoxRawData>			<EquinoxInstance><value val="1::W_SEARCH_DNS_PARTNER::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJpZCI6IjIiLCJvYmplY3RUeXBlIjoiRE5TUGFydG5lciIsImtleUUwMSI6WyIwIiwiSUJNIiwiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInByb2ZpbGUiLCIiXX19fQ==::" /></EquinoxInstance>		</EquinoxMessage>	
+DEBUG|17:09:31:247|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.E11
+-->diag  : 
+-->state  : W_SEARCH_DNS_PARTNER
+-->timeout  : 10
+
+-->rawdata(s)  : no raw data
+ADEBUG|17:09:31:254|main|Entronica2018Application|53|[Start Process]
+ADEBUG|17:09:31:261|main|Entronica2018Application|54|[CURRENT STATE] : W_SEARCH_DNS_PARTNER
+INFO|17:47:16:882|main|EC02Server|-1|EC02 :: Library Version --> 4.0.4
+DEBUG|17:47:16:913|main|ConfigLoader|-1|Initial Custom AF Log
+WARN|17:47:16:929|main|ConfigLoader|-1|testCustomLog : file name is rotated
+INFO|17:47:16:950|main|EC02Server|-1|application level ready
+DEBUG|17:47:17:066|main|EC02Handler|-1|Received data from LL Content-Length: 1880
+DEBUG|17:47:17:066|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage from="entronica2018.E11.0" via="entronica2018.E11.0"			session="669772775844604:00001" timeout="10" ret="0" diag="">			<EquinoxRawData name="HTTP" invoke="1" type="request" method="POST" url="/v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20" ctype="text/xml" to="entronica2018.ES00" orig="entronica2018.ES05.0.0" ret="0"> 								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							</EquinoxRawData>			<EquinoxInstance>				<value val="" />			</EquinoxInstance>		</EquinoxMessage>	
+DEBUG|17:47:17:113|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : entronica2018.E11.0
+-->diag  : 
+-->state  : IDLE
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message :  								<ERDHeader>				<Header name="Host" value="127.0.0.1:23600" />				<Header name="x-app" value="appName=myAis; appVersion=1.0.1" />                <Header name="x-command-id" value="myAis-1505981226052-0001" />				<Header name="Content-Language" value="en" />				<Header name="Accept-Language" value="en" />				<Header name="Content-Length" value="869" />				<Header name="REMOTE_ADDR" value="127.0.0.1" />				</ERDHeader>								<ERDData value="{					&quot;contentItems&quot;: [{						&quot;content&quot;: &quot;The IBM Watson Personality Insights service provides a Representational State Transfer (REST) Application Programming Interface (API) that enables applications to derive insights from social media, enterprise data, or other digital communications. The service uses linguistic analytics to infer individuals&apos; intrinsic personality characteristics, including Big Five, Needs, and Values, from digital communications such as email, text messages, tweets, and forum posts. The service can automatically infer, from potentially noisy social media, portraits of individuals that reflect their personality characteristics. The service can report consumption preferences based on the results of its analysis, and for JSON content that is timestamped, it can report temporal behavior.&quot;,						&quot;contenttype&quot;: &quot;text/plain&quot;,						&quot;language&quot;: &quot;en&quot;					}]				}" />							
+	-->ret : 0
+	-->method : POST
+	-->ctype : text/xml
+	-->orig : entronica2018.ES05.0.0
+	-->name : HTTP
+	-->invoke : 1
+	-->to : entronica2018.ES00
+	-->type : request
+	-->url : /v1/ExternalAPI/IBM/PersonalityInsights/profile?version=2017-10-20
+ADEBUG|17:47:17:113|main|Entronica2018Application|53|[Start Process]
+ADEBUG|17:47:17:129|main|Entronica2018Application|54|[CURRENT STATE] : IDLE
+ADEBUG|17:47:17:451|main|Entronica2018Application|60|[End Process]
+DEBUG|17:47:17:451|main|AFProxy|-1|action process completed :: 338
+DEBUG|17:47:17:466|main|EC02Controller|-1|=== >> OUTGOING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.ES00
+-->diag  : 
+-->state  : W_SERVICE_CREDENTIAL
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->message : <ERDHeader><Header name="x-command-id" value="myAis-1505981226052-0001" /></ERDHeader><ERDData value=""/>
+	-->ret : 0
+	-->method : GET
+	-->ctype : text/xml
+	-->name : HTTP
+	-->invoke : 2
+	-->to : Entronica2018.ES04.Service.0
+	-->type : request
+	-->url : /v1/ServiceManagement/ServiceCredentail/PersonalityInsights?appName=myAis
+DEBUG|17:47:17:482|main|EC02Handler|-1|
+#====> Outgoing Message is:<?xml version="1.0" encoding="tis-620" ?><EquinoxMessage diag="" from="Entronica2018.ES00" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" ><EquinoxRawData ret="0" method="GET" ctype="text/xml" name="HTTP" invoke="2" to="Entronica2018.ES04.Service.0" type="request" url="/v1/ServiceManagement/ServiceCredentail/PersonalityInsights?appName=myAis" ><ERDHeader><Header name="x-command-id" value="myAis-1505981226052-0001" /></ERDHeader><ERDData value=""/></EquinoxRawData><EquinoxInstance><value val="1::W_SERVICE_CREDENTIAL::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJlcXhNc2dNb2RlbCI6eyJoZWFkZXIiOlt7Im5hbWUiOiJ4LWNvbW1hbmQtaWQiLCJ2YWx1ZSI6Im15QWlzLTE1MDU5ODEyMjYwNTItMDAwMSJ9XSwiY29udGVudE1lc3NhZ2UiOiIifSwic2VydmljZSI6IlNlcnZpY2UuMCJ9fX0=::" /></EquinoxInstance></EquinoxMessage>
+DEBUG|17:47:17:482|main|EC02Handler|-1|
+-->TIME,total Processing Time(msec) : 416
+-->TIME,application process (msec) :353
+-->TIME,ec02 process(msec) : 63
+DEBUG|17:47:17:498|main|EC02Handler|-1|Received data from LL Content-Length: 1432
+DEBUG|17:47:17:498|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >			<EquinoxRawData ret="0" method="GET" ctype="text/xml" name="HTTP" ecode="200" invoke="2" to="Entronica2018.ES00.0" orig="Entrinica2018.ES05.0" type="response"  >				<ERDHeader>				 <Header name="Content-Type" value="application/json" />				</ERDHeader>				<ERDData value="{					&quot;resultCode&quot;: &quot;20000&quot;,					&quot;developerMessage&quot;: &quot;Success&quot;,					&quot;username&quot;: &quot;bc93eb8a-341b-40a7-9800-127ee35cc664&quot;,					&quot;password&quot;: &quot;FAM6GfxGA3GF&quot;,					&quot;url&quot;: &quot;https://gateway.watsonplatform.net/personality-insights/api&quot;				}"/>							</EquinoxRawData>			<EquinoxInstance><value val="1::W_SERVICE_CREDENTIAL::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJlcXhNc2dNb2RlbCI6eyJoZWFkZXIiOlt7Im5hbWUiOiJ4LWNvbW1hbmQtaWQiLCJ2YWx1ZSI6Im15QWlzLTE1MDU5ODEyMjYwNTItMDAwMSJ9XSwiY29udGVudE1lc3NhZ2UiOiIifSwic2VydmljZSI6IlNlcnZpY2UuMCJ9fX0=::" /></EquinoxInstance></EquinoxMessage>	
+DEBUG|17:47:17:513|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.E11
+-->diag  : 
+-->state  : W_SERVICE_CREDENTIAL
+-->timeout  : 10
+
+-->rawdata(s)  : 1
+-->raw data index : 0
+	-->raw event type : Unknown
+	-->message : 				<ERDHeader>				 <Header name="Content-Type" value="application/json" />				</ERDHeader>				<ERDData value="{					&quot;resultCode&quot;: &quot;20000&quot;,					&quot;developerMessage&quot;: &quot;Success&quot;,					&quot;username&quot;: &quot;bc93eb8a-341b-40a7-9800-127ee35cc664&quot;,					&quot;password&quot;: &quot;FAM6GfxGA3GF&quot;,					&quot;url&quot;: &quot;https://gateway.watsonplatform.net/personality-insights/api&quot;				}"/>							
+	-->ret : 0
+	-->method : GET
+	-->ctype : text/xml
+	-->orig : Entrinica2018.ES05.0
+	-->name : HTTP
+	-->invoke : 2
+	-->to : Entronica2018.ES00.0
+	-->type : response
+	-->ecode : 200
+ADEBUG|17:47:17:529|main|Entronica2018Application|53|[Start Process]
+ADEBUG|17:47:17:529|main|Entronica2018Application|54|[CURRENT STATE] : W_SERVICE_CREDENTIAL
+ADEBUG|17:47:17:667|main|Entronica2018Application|60|[End Process]
+DEBUG|17:47:17:667|main|AFProxy|-1|action process completed :: 138
+DEBUG|17:47:17:667|main|EC02Controller|-1|=== >> OUTGOING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.ES00
+-->diag  : 
+-->state  : W_SEARCH_DNS_PARTNER
+-->timeout  : 10
+
+-->rawdata(s)  : no raw data
+DEBUG|17:47:17:683|main|EC02Handler|-1|
+#====> Outgoing Message is:<?xml version="1.0" encoding="tis-620" ?><EquinoxMessage diag="" from="Entronica2018.ES00" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" ><EquinoxRawData to="Entronica2018.E01.0" name="db" ctype="db" type="request" invoke="2" ><ext-message command="search" id="2" objecttype="DNSPartner" key="0,IBM,PersonalityInsights,profile," data=""/></EquinoxRawData><EquinoxInstance><value val="1::W_SEARCH_DNS_PARTNER::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJpZCI6IjIiLCJvYmplY3RUeXBlIjoiRE5TUGFydG5lciIsImtleUUwMSI6WyIwIiwiSUJNIiwiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInByb2ZpbGUiLCIiXX19fQ==::" /></EquinoxInstance></EquinoxMessage>
+DEBUG|17:47:17:683|main|EC02Handler|-1|
+-->TIME,total Processing Time(msec) : 185
+-->TIME,application process (msec) :138
+-->TIME,ec02 process(msec) : 47
+DEBUG|17:47:17:698|main|EC02Handler|-1|Received data from LL Content-Length: 1395
+DEBUG|17:47:17:714|main|EC02Handler|-1|
+#====> Incoming Message :		<EquinoxMessage diag="" from="Entronica2018.E11" ret="0" session="669772775844604:00001" via="entronica2018.E11.0" timeout="10" >			<EquinoxRawData to="Entronica2018.E01.0" name="db" ctype="db" type="request" invoke="2" ret="0" >				<message command="search" id="2" resultcode="0" objecttype="DNSPartner" key0="0" key1="IBM" key2="PersonalityInsights" key3="profile" key4="" >					<data value="{					&quot;service&quot;: &quot;ExternalAPI.ES04.Watson&quot;,					&quot;url&quot;: &quot;/v3/profile&quot;,					&quot;authenType&quot;: &quot;userPwd&quot;,					&quot;requestHeader&quot;: [Content-Type&quot;, &quot;Accept&quot;, &quot;Content-Language&quot;, &quot;Accept-Language&quot;, &quot;X-Watson-Learning-Opt-Out&quot;]				}					"/>				</message>			</EquinoxRawData>			<EquinoxInstance><value val="1::W_SEARCH_DNS_PARTNER::false::eyJpbml0SW52b2tlIjoiMSIsInVybCI6eyJhcHBWZXJzaW9uIjoidjEiLCJhcHBOYW1lIjoiRXh0ZXJuYWxBUEkiLCJwYXJ0bmVyIjoiSUJNIiwic2VydmljZUNhdGVnb3J5IjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsImFwaU5hbWUiOiJwcm9maWxlIiwicXVlcnlTdHJpbmciOiJ2ZXJzaW9uPTIwMTctMTAtMjAiLCJhcGlQYXJhbWV0ZXIiOnsicmVzb3VyY2VfMyI6InByb2ZpbGUiLCJyZXNvdXJjZV8yIjoiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInJlc291cmNlXzEiOiJJQk0ifX0sIm91dE1lc3NhZ2UiOnsiMiI6eyJpZCI6IjIiLCJvYmplY3RUeXBlIjoiRE5TUGFydG5lciIsImtleUUwMSI6WyIwIiwiSUJNIiwiUGVyc29uYWxpdHlJbnNpZ2h0cyIsInByb2ZpbGUiLCIiXX19fQ==::" /></EquinoxInstance>		</EquinoxMessage>	
+DEBUG|17:47:17:714|main|EC02Controller|-1|=== >> INCOMING DATA
+-->applicationName  :  Entronica2018
+-->session  : 669772775844604:00001
+-->via  : entronica2018.E11.0
+-->from  : Entronica2018.E11
+-->diag  : 
+-->state  : W_SEARCH_DNS_PARTNER
+-->timeout  : 10
+
+-->rawdata(s)  : no raw data
+ADEBUG|17:47:17:730|main|Entronica2018Application|53|[Start Process]
+ADEBUG|17:47:17:730|main|Entronica2018Application|54|[CURRENT STATE] : W_SEARCH_DNS_PARTNER
